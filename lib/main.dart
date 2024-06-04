@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:social_media/features/auth/screens/login.dart';
 import 'package:social_media/theme/pallete.dart';
 
 void main() {
@@ -12,10 +13,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Social Media',
-      theme: Pallete.darkModeAppTheme,
-      home:const SizedBox()
-    );
-  } 
+        debugShowCheckedModeBanner: false,
+        title: 'Social Media',
+        theme: Pallete.darkModeAppTheme,
+        home: Login());
+  }
 }
-
